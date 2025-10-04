@@ -1,0 +1,46 @@
+#James Carl Vivo BSIT-3E
+#PROGRAMMING PROBLEM 20: Function f1 and f2
+
+def even(number):
+	return number % 2 == 0
+
+def f1(n):
+	return n + 5
+
+def f2(n):
+	return f1(n) * 2
+
+num = int(input("Enter a number: "))
+result = f2(num)
+print("Final result using f2({0}) is: {1}".format(num, result))
+
+----------------------------------------------------------------------
+
+#James Carl Vivo BSIT-3E
+#PROGRAMMING PROBLEM 16: Palindrome Checker
+
+def is_palindrome(text) :
+	cleaned = text.replace(" ", "").lower()
+	reversed_text = cleaned[::-1]
+	if cleaned == reversed_text:
+		print("The string '%s' is a palindrome." % text)
+	else:
+		print("The string '%s' is not a palindrome." % text)
+
+user_input = input("Enter a word or phrase: ")
+is_palindrome(user_input)
+
+------------------------------------------------------------------------
+
+#James Carl Vivo BSIT-3E
+#PROGRAMMING PROBLEM 25: Write a shutting down program:
+def shut_down(s):
+	if s.lower () == "yes":
+		print ("Shutting down [%d]" % 1)
+	elif s. lower() == "no":
+		print("Shutdown aborted [%d]" % 0)
+	else:
+		print("Sorry [%d]" % -1)
+
+command = input("Do you want to shut down? (yes/no): ")
+shut_down (command)
